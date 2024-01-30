@@ -1,0 +1,37 @@
+Introdução ao R
+
+1.⁠ ⁠Crie duas variáveis Ana e Paulo e atribua a elas valores
+de suas idades, sendo respectivamente 8 e 12 anos. As variáveis devem ser do tipo inteiro. Imprima no console "A menina é mais velha" ou "O menino é mais velho" como resultado de um teste lógico.
+
+```{r}
+ana = 8L
+paulo = 12L
+ifelse(ana > paulo, "A menina é mais velha", "O menino é mais velho")
+typeof(ana)
+```
+
+2. BOD é um objeto existente no R. Verifique qual a classe deste objeto.
+```{r}
+help("BOD")
+#Classe (BOD) = datasets#
+```
+
+3. Crie um vetor que armazene números de 1 a 10 e posteriormente imprima os valores pares.
+```{r}
+vetor = c(1,2,3,4,5,6,7,8,9,10)
+typeof(vetor)
+for (i in vetor) {
+  ifelse(i%%2==0, "Par","Impar")
+}
+```
+
+4. women é um dataframe existente no R. Imprima as 10 últimas linhas.
+```{r}
+women
+tail(women, 10)
+```
+
+
+```{r}
+```
+
