@@ -40,5 +40,21 @@ plot(PIris)
 
 6. Crie dois vetores de tamanhos iguais, some as posições equivalentes dos vetores e imprima o resultado.
 ```{r}
+v1 = c(1,2,3)
+v2 = c(4,5,6)
+print(v1+v2)
+```
+
+7. Imprima o número de linhas, de colunas, nomes das linhas e nome das colunas do conjunto de dados CO2.
+```{r}
+CO2
+print("Linhas: ")
+dim(CO2)[1]
+print("Colunas: ")
+dim(CO2)[2]
+print("Nome das linhas: ")
+rownames(CO2)
+print("Nome das colunas: ")
+colnames(CO2)
 
 ```
