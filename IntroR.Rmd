@@ -12,16 +12,15 @@ typeof(ana)
 
 2. BOD é um objeto existente no R. Verifique qual a classe deste objeto.
 ```{r}
-help("BOD")
-#Classe (BOD) = datasets#
+class(BOD)
 ```
 
 3. Crie um vetor que armazene números de 1 a 10 e posteriormente imprima os valores pares.
 ```{r}
 vetor = c(1,2,3,4,5,6,7,8,9,10)
-typeof(vetor)
 for (i in vetor) {
-  ifelse(i%%2==0, "Par","Impar")
+  if(vetor[i]%%2==0)
+    print(vetor[i])
 }
 ```
 
@@ -29,9 +28,17 @@ for (i in vetor) {
 ```{r}
 women
 tail(women, 10)
+#ou:
+tail(women, n=10)
 ```
 
-
+5.Use a função plot do R para produzir um gráfico do atributos Sepal.Width e Petal.Length do conjunto de dados Iris. O gráfico deve imprimir apenas das linhas 50 até 100.
 ```{r}
+PIris = iris[50:100, c(2,3)]
+plot(PIris)
 ```
 
+6. Crie dois vetores de tamanhos iguais, some as posições equivalentes dos vetores e imprima o resultado.
+```{r}
+
+```
